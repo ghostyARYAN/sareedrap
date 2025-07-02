@@ -27,7 +27,7 @@ if not hasattr(gltf, "samplers") or gltf.samplers is None:
 if len(gltf.samplers) == 0:
     gltf.samplers.append(Sampler())
 
-SCALE_FACTOR = 100  # Change this to your desired scale (e.g., 2.0 for double size)
+SCALE_FACTOR = 10  # Change this to your desired scale (e.g., 2.0 for double size)
 
 for i, (part, tex_path) in enumerate(texture_map.items()):
     texture_name = f"{part}_texture.png"
